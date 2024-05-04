@@ -8,7 +8,7 @@ Adaptive multilingual landing page.
 
 | Color            | Hex                                                              |
 | ---------------- | ---------------------------------------------------------------- |
-| Active Color | ![#CFFF6D](https://via.placeholder.com/10/CFFF6D?text=+) #CFFF6D |
+| Active Color | ![#cfff6d](https://via.placeholder.com/10/cfff6d?text=+) #cfff6d |
 
 ---
 

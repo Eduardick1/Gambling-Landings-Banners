@@ -9,7 +9,7 @@ Adaptive landing page.
 | Color            | Hex                                                              |
 | ---------------- | ---------------------------------------------------------------- |
 | Main Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
-| Msin Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Main Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 
 ---
 

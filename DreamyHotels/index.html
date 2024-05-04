@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CasinoDreamyHotels</title>
+  </head>
+  <body
+    style="font-family: 'Inter', sans-serif"
+    class="bg-[#1d1d1d] text-white"
+  >
+    <header
+      class="w-full max-w-[1320px] px-3 py-8 absolute top-0 right-1/2 translate-x-1/2 z-10 flex items-center justify-between gap-20"
+    >
+      <span id="headerLogo"
+        ><img src="./assets/images/LogoWhite.svg" alt="Logo"
+      /></span>
+      <nav class="w-full max-w-[960px]">
+        <span
+          id="mobileMenuBtn"
+          class="ml-auto w-fit grid place-content-center cursor-pointer sm:hidden"
+          ><svg
+            width="45"
+            height="23"
+            viewBox="0 0 45 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 0H45V5H0V0ZM0 9H45V14H0V9ZM45 18H0V23H45V18Z"
+              fill="#D9D9D9"
+            />
+          </svg>
+        </span>
+        <div
+          id="mobileMenu"
+          class="w-full max-sm:fixed max-sm:top-0 max-sm:right-0 max-sm:h-[100dvh] max-sm:bg-[#1d1d1d] max-sm:flex max-sm:justify-between max-sm:px-6 max-sm:py-10 z-40 max-sm:hidden"
+        >
+          <div
+            id="mobileMenuLeft"
+            class="h-full flex flex-col justify-between hidden"
+          >
+            <span id="mobileMenuCloseBtn" class="h-fit cursor-pointer"
+              ><svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="1.35355"
+                  y1="0.646447"
+                  x2="25.3536"
+                  y2="24.6464"
+                  stroke="white"
+                />
+                <line
+                  x1="0.646447"
+                  y1="24.6464"
+                  x2="24.6464"
+                  y2="0.646448"
+                  stroke="white"
+                />
+              </svg>
+            </span>
+            <span class="" id="headerLogoMobile"
+              ><img src="./assets/images/LogoWhite.svg" alt="Logo"
+            /></span>
+          </div>
+          <ul
+            class="sm:w-full flex max-sm:flex-col sm:items-center sm:justify-between gap-2"
+          >
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#facilities">Facilites</a>
+            </li>
+            <li>
+              <a href="#accommodation">Rooms</a>
+            </li>
+            <li>
+              <a href="#casino">Casino</a>
+            </li>
+            <li>
+              <a href="#FoodDrink">Food & Drink</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="hero"
+        class="h-[520px] md:h-[670px] relative flex items-center justify-center bg-[url('./assets/images/heroBg.jpg')] bg-no-repeat bg-cover bg-center before:absolute before:top-0 before:w-full before:h-full before:bg-black/40 before:z-0"
+      >
+        <div
+          id="container"
+          class="relative max-w-[500px] mx-auto flex flex-col items-center justify-center text-center"
+        >
+          <h1
+            style="font-family: 'Koulen', sans-serif"
+            class="text-[58px] sm:text-[90px] uppercase text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+          >
+            ONE OF A KIND!
+          </h1>
+          <p
+            style="font-family: 'Koulen', sans-serif"
+            class="mb-5 sm:mb-7 max-w-[25ch] text-[28px] leading-8 sm:text-[42px] sm:leading-[52px] uppercase"
+          >
+            <span class="text-[#FFDA87]">CasinoDreamyHotels</span> offers CASINO
+            to experience!
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            class="w-60 h-16 rounded-[50px] flex items-center justify-center text-[18px] font-semibold uppercase text-black bg-gradient-to-br from-[#ECD59F] to-[#BDA060]"
+          >
+            BOOK YOUR STAY
+          </a>
+        </div>
+      </section>
+      <section
+        id="facilities"
+        class="w-full max-w-[1320px] px-3 mx-auto pt-[75px] md:pt-[105px] text-balance"
+      >
+        <h2
+          style="font-family: 'Koulen', sans-serif"
+          class="text-[28px] sm:text-[42px] uppercase text-center text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+        >
+          HOTEL FACILITIES
+        </h2>
+        <div
+          class="grid gap-3 min-[500px]:grid-cols-2 lg:grid-cols-3 lg:gap-8 mt-11 sm:mt-15"
+        >
+          <div class="bg-white rounded-3xl p-8 flex flex-col gap-5 sm:gap-9">
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon1.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Accomodation
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Our accommodations will make you feel at home while you're away
+              from home. Whether you're traveling for business or pleasure, we
+              have just what you need. Book now and enjoy your stay!
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[25px] p-[30px] flex flex-col gap-5 sm:gap-9"
+          >
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon2.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Wellnes & SPA
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Looking to relax and rejuvenate? Our hotel SPA is the perfect
+              destination. From soothing massages to invigorating facials, we
+              have something for everyone. So come in and let us take care of
+              you!
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[25px] p-[30px] flex flex-col gap-5 sm:gap-9"
+          >
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon3.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Beach
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Our hotel beach is perfect for those who want to relax in peace
+              and privacy. Enjoy the quiet sound of waves crashing against the
+              shore while you sunbathe on our pristine sand beaches.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[25px] p-[30px] flex flex-col gap-5 sm:gap-9"
+          >
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon4.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Restaurants & Bars
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Relax and feast at our hotel's restaurants, serving cuisine from
+              all corners of the world. Savor creative cocktails and drinks in
+              our stylish bars. Our staff will ensure you have a wonderful time.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[25px] p-[30px] flex flex-col gap-5 sm:gap-9"
+          >
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon5.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Entertainments
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Looking for a place to stay with endless fun and excitement? From
+              thrilling casino games to relaxing SPA treatments, we have
+              something for everyone. You won't regret it!
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[25px] p-[30px] flex flex-col gap-5 sm:gap-9"
+          >
+            <div class="flex items-center gap-5 sm:gap-7">
+              <span
+                class="w-11 h-11 sm:w-15 sm:h-15 rounded-[15px] grid place-content-center p-2 flex-shrink-0 bg-[#4b4b4b]"
+                ><img
+                  src="./assets/images/facilities/icon6.svg"
+                  alt="icon"
+                  class="w-full object-center object-contain"
+              /></span>
+              <p class="font-medium text-[18px] sm:text-[22px] text-[#4b4b4b]">
+                Casino
+              </p>
+            </div>
+            <p class="font-light text-[#161616] max-sm:text-xs">
+              Step into the glamorous world of CasinoLuxuryHotels Hotel Casino
+              that offers guests an experience they'll never forget. From our
+              luxurious rooms and suites to our decadent restaurants, Casino is
+              sure to please.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        style="font-family: 'Koulen', sans-serif"
+        class="relative h-[296px] mt-[100px] md:mt-[174px] flex items-center bg-[url('./assets/images/section3Bg.png')] bg-no-repeat bg-cover bg-center before:absolute before:top-0 before:w-full before:h-full before:bg-black/40 before:z-0"
+      >
+        <div
+          id="container"
+          class="relative w-full max-w-[1320px] px-3 mx-auto flex max-lg:flex-col items-center justify-evenly"
+        >
+          <h2 class="uppercase text-[64px] sm:text-[124px]">TRY US OUT!</h2>
+          <p class="uppercase text-[26px] sm:text-[42px]">
+            YOU WILL NEVER REGRET
+          </p>
+        </div>
+      </section>
+      <section
+        id="accommodation"
+        class="w-full max-w-[1320px] px-3 mx-auto pt-[150px] md:pt-52"
+      >
+        <h2
+          style="font-family: 'Koulen', sans-serif"
+          class="text-[28px] sm:text-[42px] uppercase text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+        >
+          THE MOST LUXURIOUS ACCOMMODATION
+        </h2>
+        <div
+          id="roomsCategories"
+          class="my-6 flex flex-wrap items-center gap-5 uppercase text-[22px] font-light"
+        >
+          <button
+            data-category="all"
+            class="px-12 h-11 flex-shrink-0 rounded-3xl border border-white flex items-center justify-center font-light"
+          >
+            All
+          </button>
+          <button
+            data-category="suite"
+            class="px-12 h-11 flex-shrink-0 rounded-3xl border border-white flex items-center justify-center font-light"
+          >
+            SUITES
+          </button>
+          <button
+            data-category="premium"
+            class="px-12 h-11 flex-shrink-0 rounded-3xl border border-white flex items-center justify-center font-light"
+          >
+            PREMIUM & SUPERIOR
+          </button>
+        </div>
+        <div
+          id="roomsContainer"
+          class="grid min-[500px]:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
+      <section class="px-3 pt-[120px] md:pt-40">
+        <div
+          class="w-full max-w-[1076px] mx-auto rounded-[20px] relative md:pl-10 md:pr-[88px] flex max-md:flex-col items-center justify-between md:gap-8 bg-white text-[#1d1d1d]"
+        >
+          <div
+            class="flex flex-col max-md:items-center justify-center py-8 max-md:px-14 max-md:text-center"
+          >
+            <span><img src="./assets/images/Logo.svg" alt="Logo" /></span>
+            <h2
+              style="font-family: 'Koulen', sans-serif"
+              class="text-[28px] md:text-[42px] leading-8 mt-5 md:mt-12"
+            >
+              Want to get the best price?
+            </h2>
+            <p class="max-md:text-sm md:mb-10 mt-2">
+              Compare the prices from different booking systems
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              class="w-[198px] h-11 md:w-[282px] md:h-16 rounded-[35px] md:rounded-[50px] flex items-center justify-center font-semibold uppercase text-xs md:text-[18px] bg-gradient-to-br from-[#ECD59F] to-[#BDA060] max-md:absolute max-md:top-[calc(100%_-_22px)] max-md:right-1/2 max-md:translate-x-1/2"
+              >BOOK YOUR STAY NOW</a
+            >
+          </div>
+          <div
+            class="w-full max-w-[375px] h-[265px] md:h-[375px] bg-[url('./assets/images/section5Img.png')] bg-no-repeat bg-top bg-cover"
+          ></div>
+        </div>
+      </section>
+      <section class="">
+        <div
+          id="casino"
+          class="w-full max-w-[1320px] mx-auto px-3 pt-36 text-balance relative"
+        >
+          <h2
+            style="font-family: 'Koulen', sans-serif"
+            class="relative z-10 sm:mb-7 text-[28px] sm:text-[42px] uppercase max-md:text-center text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+          >
+            CASINO FACILITIES
+          </h2>
+          <div class="flex max-md:flex-col justify-between gap-16">
+            <div class="">
+              <p
+                class="relative z-10 max-w-[42ch] max-md:mx-auto max-sm:text-xs max-md:text-center"
+              >
+                Indulge in a sumptuous feast of options, including blackjack,
+                craps, and poker.
+              </p>
+              <div class="max-md:h-[70vw]">
+                <img
+                  src="./assets/images/casino/casinoImg.png"
+                  aria-hidden="true"
+                  class="absolute max-md:translate-x-1/2 top-0 sm:max-lg:top-[10%] right-1/2 w-full object-center object-cover min-w-[700px] sm:object-none"
+                />
+              </div>
+            </div>
+            <div
+              class="relative w-full max-w-[800px] grid min-[420px]:grid-cols-2 gap-10 md:gap-16"
+            >
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon1.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">
+                    Table Games
+                  </p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Indulge in a sumptuous feast of options, including blackjack,
+                  craps, and poker.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon2.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">Slots</p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  With over 1,000 slot machines and table games, you'll be
+                  spoilt for choice.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon3.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">
+                    Tournaments
+                  </p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Enjoy world-class accommodations and gaming action, plus the
+                  chance to win big!
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon4.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">Poker</p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Our luxurious hotel offers all the amenities you need while
+                  our world-class casino provides endless excitement.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon5.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">
+                    Free Access
+                  </p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Our luxurious hotel offers everything you need to escape the
+                  everyday, while our world-class casino provides endless
+                  entertainment.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon6.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">
+                    Roullette
+                  </p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Indulge in our world-class SPA, savor exquisite cuisine, and
+                  experience excitement at our tables and slots.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon7.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">
+                    Welcome Drink
+                  </p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  Fruity and refreshing, our CasinoLuxuryHotels Hotel Casino
+                  welcome drink is the perfect way to start your stay.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/images/casino/icon8.png" alt="icon" />
+                  <p class="font-semibold text-[18px] sm:text-[22px]">Shows</p>
+                </div>
+                <p class="font-light max-sm:text-xs leading-6">
+                  With fabulous shows and first-rate accommodations, this hotel
+                  will make your vacation unforgettable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="FoodDrink" class="pt-40">
+        <div
+          class="w-full max-w-[1090px] mx-auto px-3 flex max-lg:flex-col items-center justify-between gap-10"
+        >
+          <div
+            class="max-w-[430px] flex flex-col justify-center gap-8 max-lg:text-center"
+          >
+            <h2
+              style="font-family: 'Koulen', sans-serif"
+              class="text-[28px] sm:text-[42px] uppercase max-md:text-center text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+            >
+              DIVE INTO SOMETHING DELICIOUS
+            </h2>
+            <p class="font-light max-sm:text-xs leading-6">
+              The CasinoLuxuryHotels Hotel's cuisine is an exquisite blend of
+              international and local flavors, sure to tantalize your taste
+              buds.<br />Our chefs use only the freshest ingredients, ensuring
+              that every dish is both delicious and healthy. Whether you're in
+              the mood for something light or hearty, we have something for
+              everyone!
+            </p>
+          </div>
+          <img
+            src="./assets/images/section7Img.png"
+            alt="Dishes"
+            class="object-center"
+          />
+        </div>
+      </section>
+      <section
+        style="font-family: 'Koulen', sans-serif"
+        class="w-full max-w-[660px] mx-auto px-3 py-40"
+      >
+        <h2
+          class="mb-10 text-[28px] sm:text-[42px] uppercase text-center text-transparent bg-clip-text bg-gradient-to-br from-white to-[#999999]"
+        >
+          HAVE A QUESTION?
+        </h2>
+        <form
+          onsubmit="alert('This form has been successfully submitted!')"
+          class="flex flex-col items-center gap-5 text-black text-2xl"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="YOUR NAME"
+            required
+            class="w-full h-[82px] rounded-[20px] px-10 flex items-center"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="YOUR EMAIL"
+            required
+            class="w-full h-[82px] rounded-[20px] px-10 flex items-center"
+          />
+          <textarea
+            name="message"
+            placeholder="YOUR MESSAGE"
+            required
+            class="w-full h-[190px] sm:h-[230px] rounded-[20px] px-10 py-6"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-60 h-16 rounded-[50px] flex items-center justify-center text-[18px] uppercase text-black bg-gradient-to-br from-[#ECD59F] to-[#BDA060]"
+          >
+            submit
+          </button>
+        </form>
+      </section>
+      <section
+        class="min-h-[326px] py-14 flex items-center bg-white text-[#161616]"
+      >
+        <div
+          class="w-full max-w-[1064px] mx-auto px-3 flex max-md:flex-col max-md:items-center justify-between gap-12"
+        >
+          <blockquote class="max-w-[440px] flex flex-col gap-5">
+            <cite class="flex items-center gap-5 not-italic">
+              <span
+                class="w-[50px] h-[50px] rounded-full bg-[url('./assets/images/users/user1.png')] bg-no-repeat bg-cover bg-center"
+              ></span>
+              <p class="font-medium text-[22px]">Juliana M.</p>
+            </cite>
+            <p class="font-light text-sm leading-7">
+              « For me, the CasinoLuxuryHotels Hotel has become the perfect
+              place to escape from the hustle and bustle of everyday life.
+              Everything was perfect, from the luxurious spa treatments to the
+              delicious food and the vibrant casino nights. I was delighted and
+              will be back! »
+            </p>
+          </blockquote>
+          <blockquote class="max-w-[440px] flex flex-col gap-5">
+            <cite class="flex items-center gap-5 not-italic">
+              <span
+                class="w-[50px] h-[50px] rounded-full bg-[url('./assets/images/users/user2.png')] bg-no-repeat bg-cover bg-center"
+              ></span>
+              <p class="font-medium text-[22px]">Alexandra R.</p>
+            </cite>
+            <p class="font-light text-sm leading-7">
+              « Lovely hotel and casino. If you're looking for something
+              brilliant, this is your place. The rooms are big and so clean, the
+              spa is so pleasant, and the staff was friendly. Extra plus for
+              cool casino nights! »
+            </p>
+          </blockquote>
+        </div>
+      </section>
+      <section id="contact" class="pt-80 md:pt-40 pb-8 md:pb-24">
+        <div
+          class="relative w-full max-w-[1320px] mx-auto px-3 flex max-md:flex-col-reverse justify-between gap-16"
+        >
+          <ul class="max-w-[430px] flex flex-col gap-14">
+            <li
+              class="max-md:absolute max-md:bottom-[calc(100%_+_64px)] max-md:left-3"
+            >
+              <h3
+                style="font-family: 'Koulen', sans-serif"
+                class="uppercase text-[34px] text-[#FFDA87]"
+              >
+                ADDRESS
+              </h3>
+              <p>50 Carrington Street Sydney NSW 2000, Australia</p>
+            </li>
+            <li>
+              <h3
+                style="font-family: 'Koulen', sans-serif"
+                class="uppercase text-[34px] text-[#FFDA87]"
+              >
+                CONTACT US
+              </h3>
+              <a
+                href="mailto:hotel@casinoluxuryhotels.com"
+                target="_blank"
+                class="underline"
+              >
+                hotel@casinodreamyhotels.com
+              </a>
+            </li>
+            <li>
+              <h3
+                style="font-family: 'Koulen', sans-serif"
+                class="uppercase text-[34px] text-[#FFDA87]"
+              >
+                18+ ONLY
+              </h3>
+              <p>
+                The hotel guests must be at least 18 years old to visit
+                CasinoLuxuryHotels
+              </p>
+            </li>
+          </ul>
+          <div class="w-full max-w-[746px]">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=50%20Carrington%20Street%20Sydney%20NSW%202000,%20Australia%20+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              class="w-full h-[346px] object-cover object-center"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full max-w-[1320px] mx-auto px-3 py-8 flex max-md:flex-col-reverse items-center justify-between gap-4 font-light"
+    >
+      <p class="text-[#c1c1c1] max-sm:text-xs">
+        © 2024 CasinoDreamyHotels, ALL RIGHTS RESERVED
+      </p>
+      <ul class="w-full max-w-[445px] flex items-center justify-between">
+        <li>
+          <a href="https://casinodreamyhotels.com/privacy/" target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a href="https://casinodreamyhotels.com/terms/" target="_blank"
+            >Terms of Use</a
+          >
+        </li>
+        <li>
+          <a href="https://casinodreamyhotels.com/cookies/" target="_blank"
+            >Cookie Policy</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <div
+      id="cookie"
+      class="py-4 bg-[#BDA060] fixed w-full bottom-0 z-30 hidden"
+    >
+      <div
+        class="max-w-[1300px] px-3 mx-auto flex items-center justify-center gap-8"
+      >
+        <p>
+          We use cookie to provide our services. By using this website, you
+          agree to this
+        </p>
+        <button
+          id="accept"
+          class="bg-[#FFDA87] rounded-3xl px-6 py-1 uppercase text-black"
+        >
+          OK</button
+        ><a
+          href="https://casinodreamyhotels.com/cookies/"
+          target="_blank"
+          class="underline flex-shrink-0"
+          >More information</a
+        >
+      </div>
+    </div>
+    <script src="./assets/scripts/cookie.js"></script>
+    <script src="./assets/scripts/Rooms.js"></script>
+    <script src="./assets/scripts/mobileMenu.js"></script>
+  </body>
+</html>

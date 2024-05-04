@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="manifest"
+      href="./assets/favicons/site.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#59349C",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Fortune Wheel</title>
+  </head>
+  <body
+    style="font-family: 'Manrope', sans-serif"
+    class="text-white bg-[#000010]"
+  >
+    <div class="max-w-[1340px] w-full px-6 mx-auto relative">
+      <header
+        class="absolute z-20 w-full px-6 translate-x-1/2 right-1/2 top-9 max-md:hidden"
+      >
+        <a
+          href="#form"
+          class="ml-auto w-40 h-[52px] border border-white rounded-[90px] flex justify-center items-center duration-200 hover:bg-white/15"
+          >Contact us</a
+        >
+      </header>
+      <main>
+        <div
+          class="absolute top-[-1%] right-1/2 bg-primaryColor z-0 translate-x-1/2 w-full min-h-[740px] max-h-[1090px] filter blur-[300px] rounded-full"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="absolute top-[330px] sm:top-0 z-0 left-0 w-[50vw] max-w-[450px] min-w-[135px] aspect-square bg-[url('./assets/images/heroImg1.png')] bg-no-repeat bg-contain bg-center"
+        ></div>
+        <div
+          class="absolute top-[370px] sm:top-[200px] z-0 right-[-12%] w-[50vw] max-w-[605px] min-w-[215px] aspect-square bg-[url('./assets/images/heroImg2.png')] bg-no-repeat bg-contain bg-center"
+        ></div>
+        <section id="hero" class="pt-[52px] md:pt-[190px] pb-[284px]">
+          <div
+            class="relative flex flex-col items-center justify-center text-center gap-7 sm:gap-12 text-balance"
+          >
+            <h1
+              class="max-w-[1150px] text-[42px] leading-[46px] sm:text-[88px] sm:leading-[92px]"
+            >
+              Scopri il nostro impegno per un servizio di qualità.
+            </h1>
+            <p class="max-w-[520px] text-xs font-light sm:text-xl">
+              Il nostro team si impegna a fornire i migliori risultati possibili
+              per i nostri clienti. Crediamo nell'intero ciclo di vita del
+              progetto e saremo con voi in ogni fase
+            </p>
+            <a
+              href="#form"
+              class="h-10 w-[140px] sm:h-[68px] sm:w-[232px] flex items-center justify-center border border-[#BFB6CC] font-bold text-xs sm:text-[22px] rounded-[90px] bg-gradient-to-b to-[#2C1259] from-[#521F98] duration-200 hover:bg-gradient-to-t"
+              >Contact us</a
+            >
+          </div>
+        </section>
+        <section class="max-sm:pt-32">
+          <div
+            class="relative max-w-[1110px] mx-auto flex max-md:flex-col-reverse items-center justify-between gap-9"
+          >
+            <div class="max-w-[485px] flex flex-col justify-center gap-3">
+              <h2
+                class="font-medium text-[26px] max-sm:absolute max-sm:left-0 max-sm:bottom-[calc(100%_+_40px)]"
+              >
+                Chi Siamo
+              </h2>
+              <p class="max-sm:text-sm text-[#e2e2e2]">
+                Il nostro team si impegna a fornire i migliori risultati
+                possibili per i nostri clienti. Crediamo nell'intero ciclo di
+                vita del progetto e saremo con voi in ogni fase, dalla
+                preparazione dei prototipi degli schermi alla creazione del
+                design e del rendering dell'interfaccia (UI/UX). Ti aiuteremo a
+                creare un'architettura, a creare una roadmap e a progettare
+                database e una dashboard amministrativa per una gestione agile
+                in modo da poter gestire facilmente il tuo gioco.
+              </p>
+            </div>
+            <div
+              class="h-[280px] sm:h-[390px] w-full max-w-[512px] rounded-[45px] bg-[url('./assets/images/section2Img.png')] bg-cover bg-center bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+        <section class="flex flex-col items-center pt-40 md:pt-56">
+          <h2
+            class="max-w-[770px] font-medium text-[26px] leading-[42px] text-center"
+          >
+            Comprendiamo l'importanza di creare giochi coinvolgenti e
+            divertenti. Ecco alcuni dei servizi che offriamo:
+          </h2>
+          <p
+            class="max-w-[550px] text-[#b2b2b2] max-sm:text-sm text-center mt-8 mb-24"
+          >
+            Ottieni il riconoscimento che meriti: con il nostro aiuto, i tuoi
+            progetti di sviluppo di giochi saranno riconosciuti e riconosciuti
+            nel settore.
+          </p>
+          <div class="flex flex-wrap items-baseline justify-evenly gap-7">
+            <div
+              class="max-w-[415px] flex-1 w-full min-w-[250px] flex flex-col gap-9 text-[#e2e2e2] max-sm:text-center max-sm:text-sm"
+            >
+              <div
+                class="w-full aspect-square rounded-[45px] bg-[url('./assets/images/section3Img1.png')] bg-no-repeat bg-cover bg-center"
+              ></div>
+              <p>
+                Sviluppo di giochi per dispositivi mobili: siamo specializzati
+                nello sviluppo di giochi per dispositivi iOS e Android
+                ottimizzati per un funzionamento fluido e il massimo
+                divertimento.
+              </p>
+            </div>
+            <div
+              class="max-w-[415px] flex-1 w-full min-w-[320px] flex flex-col gap-9"
+            >
+              <div
+                class="w-full aspect-square rounded-[45px] bg-[url('./assets/images/section3Img2.png')] bg-no-repeat bg-cover bg-left"
+              ></div>
+              <p>
+                Sound Design del gioco e creazione musicale: dai vita al tuo
+                gioco con effetti sonori coinvolgenti e una colonna sonora
+                memorabile creata dai nostri talentuosi professionisti del
+                suono.
+              </p>
+            </div>
+            <div
+              class="max-w-[415px] flex-1 w-full min-w-[320px] flex flex-col gap-9"
+            >
+              <div
+                class="w-full aspect-square rounded-[45px] bg-[url('./assets/images/section3Img3.png')] bg-no-repeat bg-cover bg-center"
+              ></div>
+              <p>
+                Analisi e metriche di gioco: prendi decisioni basate sui dati
+                con i nostri servizi di analisi e metriche di gioco che
+                forniscono informazioni sul comportamento dei giocatori, sulle
+                prestazioni di gioco e altro ancora.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="pt-24 md:pt-64 flex flex-col items-center gap-12 md:gap-24 text-[#e2e2e2] max-sm:text-sm relative"
+        >
+          <div
+            class="absolute top-1/2 -translate-y-1/2 right-1/2 bg-primaryColor z-0 translate-x-1/2 w-full h-[80%] filter blur-[300px] rounded-full"
+            aria-hidden="true"
+          ></div>
+          <div class="relative flex flex-col items-center gap-6">
+            <h2
+              class="max-w-[560px] font-medium text-[26px] leading-[42px] text-center text-white"
+            >
+              The Boaardwalk Gamery: Un paradiso per gli appassionati di giochi
+              da tavolo
+            </h2>
+            <p class="max-w-[925px] md:text-center">
+              Benvenuto a The Boaardwalk Gamery, il paradiso definitivo per gli
+              amanti dei giochi da tavolo e dei giochi da tavolo! Situato nel
+              cuore della città, il nostro negozio è un vivace hub che riunisce
+              una comunità di giocatori, dai giocatori occasionali agli
+              strateghi più accaniti. I nostri scaffali sono un mosaico colorato
+              di giochi, che vanno dai classici preferiti dalle famiglie alle
+              ultime sensazioni indie. Tra queste, la folle serie di giochi
+              temporali occupa un posto speciale, nota per la sua eccitazione
+              frenetica e i colpi di scena imprevedibili.
+            </p>
+          </div>
+          <div
+            class="relative flex items-center justify-between w-full gap-10 max-lg:flex-col"
+          >
+            <div
+              class="h-[324px] w-full max-w-[570px] rounded-[45px] bg-[url('./assets/images/section4Img1.png')] bg-no-repeat bg-cover bg-center"
+            ></div>
+            <p class="w-full max-w-[636px]">
+              Quando entri in The Boaardwalk Gamery, la folle serie temporale ti
+              accoglie con le sue opere d'arte luminose e coinvolgenti,
+              promettendo ore di gioco emozionante. La nostra collezione è
+              meticolosamente curata per soddisfare tutti i gusti e tutte le
+              età. Che tu stia cercando giochi di strategia, giochi di società
+              leggeri o la scarica di adrenalina del tempo folle, abbiamo
+              qualcosa per soddisfare il palato di ogni giocatore. Il nostro
+              staff, appassionato di giochi come te, è sempre pronto a
+              consigliare il gioco perfetto o ad aiutare i nuovi arrivati a
+              navigare nel vasto mondo dei giochi da tavolo.
+            </p>
+          </div>
+          <div
+            class="relative flex items-center justify-between w-full gap-10 max-lg:flex-col-reverse"
+          >
+            <p class="w-full max-w-[636px]">
+              Crediamo che i giochi da tavolo siano più di un semplice
+              intrattenimento; Sono un modo per connettere le persone, creare
+              ricordi e sviluppare il pensiero strategico. Ecco perché ospitiamo
+              regolarmente serate di gioco ed eventi in cui gli appassionati
+              possono riunirsi, fare nuove amicizie e mettere alla prova le
+              proprie abilità in un ambiente amichevole. Questi eventi sono
+              spesso caratterizzati dalle amate serie temporali folli, in cui
+              risate e applausi sono all'ordine del giorno.
+            </p>
+            <div
+              class="h-[324px] w-full max-w-[570px] rounded-[45px] bg-[url('./assets/images/section4Img2.png')] bg-no-repeat bg-cover bg-center"
+            ></div>
+          </div>
+        </section>
+        <section id="FAQ" class="pt-44 md:pt-72">
+          <div class="max-w-[1076px] w-full mx-auto">
+            <h2 class="font-semibold text-[26px] text-center mb-12">
+              Domande frequenti
+            </h2>
+            <div class="flex flex-col gap-5 md:gap-10">
+              <div
+                class="bg-gradient-to-b from-[#0E0E1C] to-[#252533] border border-[#3B3248] rounded-[45px]"
+              >
+                <input type="checkbox" id="faq1" class="hidden peer" />
+                <label
+                  class="py-5 pl-11 pr-20 font-medium min-h-[70px] flex items-center text-xs sm:text-[22px] relative after:absolute after:w-5 after:h-5 after:right-11 w-full cursor-pointer after:top-1/2 after:-translate-y-1/2 after:duration-200 peer-checked:after:rotate-45 after:bg-[url('./assets/images/cross.svg')] after:bg-no-repeat after:bg-center after:bg-contain duration-200"
+                  for="faq1"
+                >
+                  Você oferece suporte a modding em seus jogos?
+                </label>
+                <div
+                  class="hidden pb-5 font-light peer-checked:block px-11 text-xs sm:text-[22px] sm:leading-9"
+                >
+                  <p class="text-[#bebebe] max-w-[630px]">
+                    Fill out the registration form to join the online casino.
+                    Sign up here. Please enter all information carefully in
+                    order to successfully verify your age
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-gradient-to-b from-[#0E0E1C] to-[#252533] border border-[#3B3248] rounded-[45px]"
+              >
+                <input type="checkbox" id="faq2" class="hidden peer" />
+                <label
+                  class="py-5 pl-11 pr-20 font-medium min-h-[70px] flex items-center text-xs sm:text-[22px] relative after:absolute after:w-5 after:h-5 after:right-11 w-full cursor-pointer after:top-1/2 after:-translate-y-1/2 after:duration-200 peer-checked:after:rotate-45 after:bg-[url('./assets/images/cross.svg')] after:bg-no-repeat after:bg-center after:bg-contain duration-200"
+                  for="faq2"
+                >
+                  Você oferece suporte a modding em seus jogos?
+                </label>
+                <div
+                  class="hidden pb-5 font-light peer-checked:block px-11 text-xs sm:text-[22px] sm:leading-9"
+                >
+                  <p class="text-[#bebebe] max-w-[630px]">
+                    Fill out the registration form to join the online casino.
+                    Sign up here. Please enter all information carefully in
+                    order to successfully verify your age
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-gradient-to-b from-[#0E0E1C] to-[#252533] border border-[#3B3248] rounded-[45px]"
+              >
+                <input type="checkbox" id="faq3" class="hidden peer" />
+                <label
+                  class="py-5 pl-11 pr-20 font-medium min-h-[70px] flex items-center text-xs sm:text-[22px] relative after:absolute after:w-5 after:h-5 after:right-11 w-full cursor-pointer after:top-1/2 after:-translate-y-1/2 after:duration-200 peer-checked:after:rotate-45 after:bg-[url('./assets/images/cross.svg')] after:bg-no-repeat after:bg-center after:bg-contain duration-200"
+                  for="faq3"
+                >
+                  Você oferece suporte a modding em seus jogos?
+                </label>
+                <div
+                  class="hidden pb-5 font-light peer-checked:block px-11 text-xs sm:text-[22px] sm:leading-9"
+                >
+                  <p class="text-[#bebebe] max-w-[630px]">
+                    Fill out the registration form to join the online casino.
+                    Sign up here. Please enter all information carefully in
+                    order to successfully verify your age
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-gradient-to-b from-[#0E0E1C] to-[#252533] border border-[#3B3248] rounded-[45px]"
+              >
+                <input type="checkbox" id="faq4" class="hidden peer" />
+                <label
+                  class="py-5 pl-11 pr-20 font-medium min-h-[70px] flex items-center text-xs sm:text-[22px] relative after:absolute after:w-5 after:h-5 after:right-11 w-full cursor-pointer after:top-1/2 after:-translate-y-1/2 after:duration-200 peer-checked:after:rotate-45 after:bg-[url('./assets/images/cross.svg')] after:bg-no-repeat after:bg-center after:bg-contain duration-200"
+                  for="faq4"
+                >
+                  Você oferece suporte a modding em seus jogos?
+                </label>
+                <div
+                  class="hidden pb-5 font-light peer-checked:block px-11 text-xs sm:text-[22px] sm:leading-9"
+                >
+                  <p class="text-[#bebebe] max-w-[630px]">
+                    Fill out the registration form to join the online casino.
+                    Sign up here. Please enter all information carefully in
+                    order to successfully verify your age
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="form"
+          class="relative max-w-[1076px] w-full mx-auto pt-44 md:pt-[340px] md:pb-56 before:absolute max-sm:before:left-1/2 max-sm:before:-translate-x-1/2 sm:before:left-[-25%] before:z-10 before:top-[60%] before:-translate-y-1/2 before:h-full before:min-w-[320px] before:w-full before:bg-[url('./assets/images/formImg.png')] before:bg-no-repeat before:bg-contain before:bg-center"
+        >
+          <div
+            class="absolute top-2/3 -translate-y-1/2 right-2/3 bg-primaryColor z-0 translate-x-1/2 w-full h-[80%] filter blur-[300px] rounded-full"
+            aria-hidden="true"
+          ></div>
+          <div class="max-sm:mx-auto sm:ml-auto max-w-[400px] relative z-20">
+            <form
+              onsubmit="alert('This form has been successfully submitted!')"
+              class="flex flex-col w-full gap-5 text-black max-sm:items-center"
+            >
+              <h2
+                class="font-medium text-[26px] max-sm:text-center mb-48 sm:mb-[52px] text-white [text-shadow:_1px_1px_25px_#000000]"
+              >
+                Domande frequenti
+              </h2>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                class="w-full h-14 rounded-[40px] px-6"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="w-full h-14 rounded-[40px] px-6"
+              />
+              <input
+                type="text"
+                name="comment"
+                placeholder="Comment"
+                required
+                class="w-full h-14 rounded-[40px] px-6"
+              />
+              <button
+                type="submit"
+                class="h-[58px] text-white w-[212px] flex mt-5 sm:mt-10 items-center justify-center border border-[#BFB6CC] font-bold text-[22px] rounded-[90px] bg-gradient-to-b to-[#2C1259] from-[#521F98] duration-200 hover:bg-gradient-to-t"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+        <section id="Contacts" class="pt-28">
+          <div
+            class="max-w-[1320px] w-full mx-auto px-3 flex items-center justify-between max-md:flex-col gap-9"
+          >
+            <div
+              class="max-w-[550px] flex flex-col gap-10 sm:text-[18px] font-light"
+            >
+              <h2 class="text-2xl font-semibold sm:text-4xl sm:mb-10">
+                Contacts
+              </h2>
+              <div
+                class="max-w-[500px] flex justify-between max-lg:gap-10 text-base sm:text-[22px] max-lg:flex-col"
+              >
+                <a
+                  href="tel:+556238775390"
+                  target="_blank"
+                  class="underline-offset-8 hover:underline"
+                  >+55 62 3877-5390</a
+                >
+                <a
+                  href="mailto:postmassive@mail.br"
+                  target="_blank"
+                  class="underline-offset-8 hover:underline"
+                  >postmassive@mail.br</a
+                >
+              </div>
+              <p class="text-balance">
+                F13 Av. Brigadeiro Faria Lima, 3900 – 13º, 14º e 15º andar -
+                Itaim Bibi, São Paulo - SP, 04538-132, Brasil
+              </p>
+            </div>
+            <div class="max-w-[545px] w-full">
+              <iframe
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=F13%20Av.%20Brigadeiro%20Faria%20Lima,%203900%20%E2%80%93%2013%C2%BA,%2014%C2%BA%20e%2015%C2%BA%20andar%20-%20%20Bibi,%20S%C3%A3o%20Paulo%20-%20SP,%2004538-132,%20Brasil%20S%C3%A3o%20Paulo+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                class="w-full h-[270px] rounded-3xl object-cover object-center"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="max-w-[1320px] w-full mx-auto px-3 pb-7 pt-[120px] md:pb-24 md:pt-48"
+      >
+        <p
+          class="mb-8 max-w-[995px] font-light text-[#9e9e9e] text-xs sm:text-[18px] leading-7"
+        >
+          The fortunewheel.com site is designed for an adult audience and does
+          not offer real-money gambling or chances to win real money or prizes.
+          All games are intended for entertainment purposes only and do not
+          exert any influence on the possible future use of real money gambling
+          games.
+        </p>
+        <div
+          class="flex justify-between gap-6 text-xs sm:text-sm md:items-center max-md:flex-col"
+        >
+          <p>
+            Copyright ©️ 2024
+            <a href="#" target="_blank">fortunewheel.com</a> All Rights Reserved
+          </p>
+          <div
+            class="max-w-[400px] w-full flex items-center justify-between text-xs sm:text-sm"
+          >
+            <a
+              href="./assets/pages/Privacy.html"
+              target="_blank"
+              class="underline-offset-8 hover:underline"
+              >Privacy Policy</a
+            ><a
+              href="./assets/pages/Terms.html"
+              target="_blank"
+              class="underline-offset-8 hover:underline"
+              >Terms and Conditions</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div
+      id="cookie"
+      class="text-black fixed bottom-4 left-1/2 -translate-x-1/2 px-[70px] pt-9 pb-4 min-h-[216px] max-w-[862px] w-full flex-col items-center gap-8 rounded-[20px] bg-white text-center shadow-[2px_3px_10px_0_rgba(0,0,0,0.8)] z-30 hidden"
+    >
+      <p class="text-sm max-w-[650px] mb-8">
+        Nosso recurso usa cookies para melhorar sua experiência. Se desejar,
+        você pode optar por não usá-los, no entanto, isso pode limitar algumas
+        das funções do site. Por favor, leia nosso
+        <a
+          href="./assets/pages/Cookie.html"
+          target="_blank"
+          class="text-primaryColor"
+          >aviso de cookies</a
+        >
+      </p>
+      <div
+        class="flex items-center justify-center w-full gap-2 font-bold text-white max-md:flex-wrap md:justify-between"
+      >
+        <button
+          id="accept"
+          class="px-4 h-[55px] flex items-center justify-center flex-shrink-0 rounded-[10px] bg-primaryColor cursor-pointer"
+        >
+          Aceitar todos os cookies
+        </button>
+        <button
+          id="config"
+          class="px-4 h-[55px] flex items-center justify-center flex-shrink-0 rounded-[10px] bg-primaryColor cursor-pointer"
+        >
+          Configurações de cookies
+        </button>
+        <button
+          id="reject"
+          class="px-4 h-[55px] flex items-center justify-center flex-shrink-0 rounded-[10px] bg-primaryColor cursor-pointer"
+        >
+          Rejeitar tudo
+        </button>
+      </div>
+    </div>
+    <script src="./assets/scripts/cookie.js"></script>
+  </body>
+</html>

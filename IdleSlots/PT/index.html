@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>IDLE SLOTS</title>
+  </head>
+  <body
+    style="font-family: 'Poppins', sans-serif"
+    class="text-[#353535] bg-[#f9f9f9] text-balance overflow-x-hidden"
+  >
+    <header class="px-4 md:px-6">
+      <div
+        class="max-w-[1296px] w-full mx-auto border-b border-[#d5d5d5] pt-2 pb-4 flex items-center gap-[50px] pr-2"
+      >
+        <div
+          id="logo"
+          class="flex items-center max-md:flex-col gap-[10px] flex-shrink-0"
+        >
+          <span><img src="./images/Logo.svg" alt="logo" /></span>
+          <p class="uppercase font-bold text-[#696969] flex-shrink-0">
+            idle slots
+          </p>
+        </div>
+        <p class="text-sm text-[#979191] text-wrap">
+          Este site é apenas para maiores de 18 anos. Se você, ou alguém de sua
+          família ou amigos tiver problemas com o vício do jogo, visite
+          <a
+            href="https://www.begambleaware.org/"
+            class="border-b border-[#979191]"
+            >esses&nbspsites</a
+          >.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="pt-10 md:pt-12 lg:pt-28 max-md:pb-7">
+        <div
+          class="max-w-[1344px] w-full mx-auto h-[715px] md:h-[515px] lg:h-[555px] px-4 md:px-6 relative flex flex-col max-md:items-center max-md:text-center"
+        >
+          <div
+            class="absolute min-w-[600px] min-h-[500px] w-full md:w-[900px] h-[700px] top-0 md:top-[-25%] left-[55%] max-md:-translate-x-1/2 md:left-1/3 lg:left-[40%] bg-[url('./images/heroImg.png')] z-[-1] bg-contain bg-no-repeat bg-center"
+          ></div>
+          <h1
+            class="w-fit font-bold text-[32px] md:text-[42px] lg:text-[64px] text-white relative before:absolute before:bottom-1/2 before:translate-y-1/2 before:right-1/2 before:translate-x-1/2 before:w-[255px] before:md:w-[340px] before:lg:w-[508px] before:h-[140px] before:bg-[url('./images/headerBg.png')] before:bg-contain before:bg-center before:bg-no-repeat before:z-[-1]"
+          >
+            Idle Slots
+          </h1>
+          <p
+            class="lg:max-w-[550px] font-medium text-[28px] md:text-4xl leading-9 md:leading-[56px] mt-[30px] md:mt-[42px] lg:mt-[70px]"
+          >
+            Melhores sites de apostas e&nbspjogos de azar em Portugal
+          </p>
+          <p
+            class="max-w-[392px] lg:max-w-[628px] text-xs md:text-sm lg:text-base leading-6 mt-auto md:mt-8"
+          >
+            Procura os melhores casinos online de Portugal? Estamos protegendo
+            você. Nossa equipe de especialistas passa horas testando e revisando
+            todos os sites existentes, poupando-lhe o trabalho duro. Estamos
+            constantemente atualizando nosso banco de dados para que você tenha
+            acesso a informações precisas sobre os melhores novos sites de
+            cassino do mercado. Todos os sites são aprovados e licenciados pelo
+            SRIJ
+          </p>
+        </div>
+      </section>
+      <section id="features" class="text-[#4d4d4d]">
+        <div
+          class="max-w-[1230px] w-full mx-auto px-3 md:px-6 flex flex-wrap items-center justify-center lg:justify-between gap-4 md:gap-4"
+        >
+          <div
+            class="shadow-md rounded-[15px] md:rounded-[20px] gap-2 sm:gap-5 text-wrap bg-white h-[55px] md:h-[84px] flex items-center justify-center px-4 max-w-[306px] max-[450px]:w-[164px] sm:w-full"
+          >
+            <span
+              ><img src="./images/flag.png" alt="icon" class="max-sm:max-w-8"
+            /></span>
+            <p class="max-w-[160px] font-medium text-[10px] sm:text-sm">
+              Aprovado pelo SRIJ
+            </p>
+          </div>
+          <div
+            class="flex shadow-md rounded-[15px] md:rounded-[20px] gap-5 bg-white h-[55px] md:h-[84px] items-center justify-center px-4 max-w-[306px] max-[450px]:w-[164px] sm:w-full"
+          >
+            <span
+              ><img
+                src="./images/secured.png"
+                alt="icon"
+                class="max-sm:max-w-8"
+            /></span>
+            <p class="text-center font-medium text-[10px] sm:text-sm">
+              100% seguro
+            </p>
+          </div>
+          <div
+            class="flex shadow-md rounded-[15px] md:rounded-[20px] gap-5 bg-white h-[55px] md:h-[84px] items-center justify-center px-4 max-w-[306px] max-[450px]:w-[164px] sm:w-full"
+          >
+            <span
+              ><img
+                src="./images/withdraw.png"
+                alt="icon"
+                class="max-sm:max-w-8"
+            /></span>
+            <p class="text-center font-medium text-[10px] sm:text-sm">
+              Retiradas transparentes
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="websites" class="pt-[85px] lg:pt-[105px]">
+        <div class="max-w-[1344px] w-full mx-auto px-4 md:px-6">
+          <h2
+            class="font-semibold text-lg sm:text-[28px] max-xl:text-center mb-[76px]"
+          >
+            Melhores sites em Portugal
+          </h2>
+          <div
+            class="flex items-center max-xl:flex-col justify-between flex-wrap gap-[88px] md:gap-14 lg:gap-[70px] md:px-8"
+          >
+            <div
+              class="flex flex-col py-[50px] px-5 md:px-[38px] max-w-[550px] w-full rounded-[25px] bg-white relative shadow-md"
+            >
+              <span
+                class="w-[249px] h-11 rounded-[10px] -rotate-[3deg] bg-gradient-to-b from-[#FFD600] to-[#FFB800] absolute -top-[12px] right-1/2 translate-x-1/2 flex items-center justify-center uppercase text-white font-semibold text-2xl"
+                >TOP #1 CASINO</span
+              >
+              <div id="img" class="w-[191px] mb-5 sm:mb-7 sm:w-[306px] mx-auto">
+                <img
+                  src="./images/brand1.png"
+                  alt="brand"
+                  class="object-cover object-center w-full"
+                />
+              </div>
+              <div class="flex gap-12 sm:gap-[125px]">
+                <div id="rating" class="flex flex-col gap-5">
+                  <p class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base">
+                    User rating
+                  </p>
+                  <div class="flex items-center justify-center gap-[6px]">
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div id="source" class="flex flex-col">
+                  <span
+                    class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base"
+                  >
+                    Our source
+                  </span>
+                  <p class="text-[#b0b0b0]">
+                    🔥
+                    <span class="text-black text-[32px]">98</span>
+                    \ 100
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-5 my-10">
+                <span class="text-[#7d7575]">Pros</span>
+                <ul
+                  class="list-image-[url('./images/listMark.svg')] flex flex-wrap pl-4 justify-between gap-4 text-[#605d5d] text-sm"
+                >
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    A melhor casa de apostas para todos os perfis
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Cashout disponível para encerrar apostas
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Betclic TV para acompanhar os jogos em direto
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="flex flex-wrap items-center justify-center gap-5 text-white"
+              >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-2xl font-extrabold bg-gradient-to-b from-[#13B8FF] to-[#413DDD]"
+                  >INSCREVER-SE</a
+                >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center px-2 justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-sm font-semibold bg-gradient-to-b from-[#44E11D] to-[#1EAB78]"
+                  >BÔNUS EXCLUSIVO DE 50€ EM VEZ DE 20€</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex flex-col py-[50px] px-5 md:px-[38px] max-w-[550px] w-full rounded-[25px] bg-white relative shadow-md"
+            >
+              <span
+                class="w-[249px] h-11 rounded-[10px] -rotate-[3deg] bg-gradient-to-b from-[#1070FF] to-[#0819B6] absolute -top-[12px] right-1/2 translate-x-1/2 flex items-center justify-center uppercase text-white font-semibold text-2xl"
+                >TOP #2 CASINO</span
+              >
+              <div id="img" class="w-[191px] mb-5 sm:mb-7 sm:w-[306px] mx-auto">
+                <img
+                  src="./images/brand2.png"
+                  alt="brand"
+                  class="object-cover object-center w-full"
+                />
+              </div>
+              <div class="flex gap-12 sm:gap-[125px]">
+                <div id="rating" class="flex flex-col gap-5">
+                  <p class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base">
+                    User rating
+                  </p>
+                  <div class="flex items-center justify-center gap-[6px]">
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div id="source" class="flex flex-col">
+                  <span
+                    class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base"
+                  >
+                    Our source
+                  </span>
+                  <p class="text-[#b0b0b0]">
+                    🔥
+                    <span class="text-black text-[32px]">97</span>
+                    \ 100
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-5 my-10">
+                <span class="text-[#7d7575]">Pros</span>
+                <ul
+                  class="list-image-[url('./images/listMark.svg')] flex flex-wrap pl-4 justify-between gap-4 text-[#605d5d] text-sm"
+                >
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    A melhor casa de apostas para as suas apostas em direto
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Entre as odds mais competitivas do mercado
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Casa de apostas históricas e de alta segurança
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="flex flex-wrap items-center justify-center gap-5 text-white"
+              >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-2xl font-extrabold bg-gradient-to-b from-[#13B8FF] to-[#413DDD]"
+                  >INSCREVER-SE</a
+                >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center px-2 justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-sm font-semibold bg-gradient-to-b from-[#44E11D] to-[#1EAB78]"
+                  >10€ EM APOSTA GRÁTIS +50€ SEM RISCO</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex flex-col py-[50px] px-5 md:px-[38px] max-w-[550px] w-full rounded-[25px] bg-white relative shadow-md"
+            >
+              <span
+                class="w-[249px] h-11 rounded-[10px] -rotate-[3deg] bg-gradient-to-b from-[#C78662] to-[#B66608] absolute -top-[12px] right-1/2 translate-x-1/2 flex items-center justify-center uppercase text-white font-semibold text-2xl"
+                >TOP #3 CASINO</span
+              >
+              <div id="img" class="w-[191px] mb-5 sm:mb-7 sm:w-[306px] mx-auto">
+                <img
+                  src="./images/brand3.png"
+                  alt="brand"
+                  class="object-cover object-center w-full"
+                />
+              </div>
+              <div class="flex gap-12 sm:gap-[125px]">
+                <div id="rating" class="flex flex-col gap-5">
+                  <p class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base">
+                    User rating
+                  </p>
+                  <div class="flex items-center justify-center gap-[6px]">
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90675 0.557625C9.017 0.331 9.248 0.1875 9.5 0.1875C9.75288 0.1875 9.983 0.331 10.0933 0.557625C10.9455 2.30588 12.412 5.31763 12.412 5.31763C12.412 5.31763 15.7466 5.77613 17.6812 6.043C18.0339 6.09113 18.25 6.3895 18.25 6.69663C18.25 6.86288 18.187 7.03175 18.0479 7.16563C16.6391 8.51138 14.2136 10.8328 14.2136 10.8328C14.2136 10.8328 14.806 14.1289 15.149 16.0408C15.2216 16.445 14.9084 16.8125 14.4998 16.8125C14.393 16.8125 14.2862 16.7871 14.1891 16.7346C12.4671 15.8176 9.5 14.24 9.5 14.24C9.5 14.24 6.53287 15.8176 4.81087 16.7346C4.71375 16.7871 4.60612 16.8125 4.49937 16.8125C4.0925 16.8125 3.7775 16.4441 3.851 16.0408C4.19488 14.1289 4.78725 10.8328 4.78725 10.8328C4.78725 10.8328 2.36088 8.51138 0.953 7.16563C0.813 7.03175 0.75 6.86287 0.75 6.6975C0.75 6.3895 0.967875 6.09025 1.31963 6.043C3.25425 5.77613 6.588 5.31763 6.588 5.31763C6.588 5.31763 8.05537 2.30588 8.90675 0.557625Z"
+                        fill="#FFC806"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div id="source" class="flex flex-col">
+                  <span
+                    class="text-[#7d7575] text-[9px] sm:text-xs lg:text-base"
+                  >
+                    Our source
+                  </span>
+                  <p class="text-[#b0b0b0]">
+                    🔥
+                    <span class="text-black text-[32px]">96</span>
+                    \ 100
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-5 my-10">
+                <span class="text-[#7d7575]">Pros</span>
+                <ul
+                  class="list-image-[url('./images/listMark.svg')] flex flex-wrap pl-4 justify-between gap-4 text-[#605d5d] text-sm"
+                >
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Marca 100% portuguesa
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Casino consolidado em Portugal
+                  </li>
+                  <li class="pl-3 max-w-[130px] sm:max-w-[220px]">
+                    Muitas opções de jogos
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="flex flex-wrap items-center justify-center gap-5 text-white"
+              >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-2xl font-extrabold bg-gradient-to-b from-[#13B8FF] to-[#413DDD]"
+                  >INSCREVER-SE</a
+                >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center px-2 justify-center w-[221px] h-[65px] rounded-[20px] gap-2 text-center uppercase text-sm font-semibold bg-gradient-to-b from-[#44E11D] to-[#1EAB78]"
+                  >1ª APOSTA DE 10€ RECEBE FREEBET DE 30€</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="creteries" class="pt-44 pb-[105px]">
+        <div class="max-w-[1332px] mx-auto px-3 sm:px-[26px]">
+          <ul
+            class="flex flex-col gap-[52px] sm:gap-16 text-xs sm:text-sm lg:text-base leading-[26px]"
+          >
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h2 class="text-[18px] sm:text-[28px]">Critérios do cassino</h2>
+              <p>
+                O jogo é uma excelente forma de passar o tempo e potencialmente
+                obter alguns lucros. Hoje, uma infinidade de operadoras está a
+                apenas um clique de distância. No entanto, a grande quantidade
+                não significa necessariamente qualidade superior. Muitos sites
+                podem parecer semelhantes, mas são os detalhes que fazem a
+                diferença. É por isso que a orientação especializada é crucial
+                para navegar na complexa tarefa de identificar plataformas
+                superiores. Nossos experientes especialistas em jogos fizeram o
+                trabalho braçal para guiá-lo até o crème de la crème dos
+                cassinos online que atendem ao seu gosto.
+              </p>
+            </li>
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h3 class="text-[18px] sm:text-[22px]">
+                Reputação e fiabilidade
+              </h3>
+              <p>
+                A imagem e a confiabilidade de um cassino são fatores
+                fundamentais queinfluenciam principalmente sua classificação
+                geral e seu suce sso no mercado. Uma reputação sólida atrai
+                novos visitantes e retém clientes fiéis, levando ao crescimento
+                sustentável e à lucratividade. Um estabelecimento de jogo
+                confiável deve respeitar a transparência, a justiça e ser
+                supervisionado por órgãos competentes, garantindo um ambiente
+                seguro para os seus utilizadores. As avaliações, tanto
+                independentes quanto baseadas nos jogadores, são outro fator
+                fundamental para melhorar a reputação de uma operadora. As
+                experiências de usuário em primeira mão esclarecem as ofertas de
+                um site e ajudam os recém-chegados a decidir se devem ou não
+                usar o Inscrever-se. Esses insights sinceros fornecem dados
+                inestimáveis sobre os pontos fortes e fracos da plataforma. Como
+                plataforma de revisão objetiva, também influenciamos o destino
+                de operadores específicos. Os nossos especialistas fornecem uma
+                visão holística dos atributos de um casino, destacando tanto os
+                seus méritos como as áreas a melhorar. Ao sublinhar os
+                critérios-chave, ajudamos os jogadores a identificar os casinos
+                online de melhor qualidade, onde podem desfrutar das melhores
+                experiências de jogo.
+              </p>
+            </li>
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h3 class="text-[18px] sm:text-[22px]">
+                Seleção de jogos e excelência de software
+              </h3>
+              <p>
+                Ao selecionar um cassino, você deseja experimentar seus jogos
+                favoritos e obter acesso a títulos renomados. Além disso,
+                parcerias com fornecedores de software de renome garantem
+                jogabilidade de alta qualidade e gráficos de ponta, melhorando
+                sessões de jogo estelares. Isto também manifesta a credibilidade
+                da operadora e solidifica a sua reputação. Em relação aos
+                gêneros de jogos, os melhores cassinos online oferecem uma
+                mistura de slots clássicos e contemporâneos, jogos de mesa
+                atemporais e compromissos com dealers ao vivo. Os slots são
+                particularmente procurados devido aos seus temas vibrantes e
+                características distintivas. Os títulos das cartas desafiam você
+                a exercitar sua capacidade estratégica. Além disso, os jogos ao
+                vivo fundem perfeitamente os reinos dos cassinos virtuais e
+                físicos, oferecendo interações emocionantes com dealers reais.
+              </p>
+            </li>
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h3 class="text-[18px] sm:text-[22px]">
+                Bônus e promoções generosos
+              </h3>
+              <p>
+                Jogadores de todos os níveis de habilidade adoram receber bônus
+                e promoções atraentes em seu cassino favorito. Essas ofertas
+                ampliam a jogabilidade e aumentam as chances de vitória. Do
+                nosso ponto de vista, o sistema de recompensas é um elemento
+                fundamental nas nossas análises. Incentivos generosos com
+                condições razoáveis significam o compromisso de um casino em
+                proporcionar à sua clientela uma experiência de jogo agradável e
+                justa. A variedade pode incluir pacotes de boas-vindas, rodadas
+                grátis, ofertas de depósito e sem depósito, juntamente com
+                eventos em andamento. Aproveite isso para melhorar
+                significativamente sua sessão e reforçar seu saldo no caminho do
+                triunfo.
+              </p>
+            </li>
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h3 class="text-[18px] sm:text-[22px]">
+                Serviços bancários seguros e proteção de dados
+              </h3>
+              <p>
+                Participar de jogos com dinheiro real exige compromissos
+                financeiros com o cassino escolhido, o que significa fazer
+                depósitos, inerentemente repletos de riscos. No entanto, ao
+                jogar num casino online de primeira linha, essas preocupações
+                diminuem, pois garantem transações seguras e métodos de
+                pagamento fáceis de usar. Operadores respeitáveis deveriam
+                implementar medidas de segurança sofisticadas: <br /><br />A
+                criptografia SSL (Secure Socket Layer) protege os dados
+                transmitidos entre os jogadores e os servidores do cassino.<br />
+                Protocolos de segurança multicamadas, como autenticação de dois
+                fatores (2FA), protegem os detalhes da conta.
+                <br />
+                Auditorias regulares de segurança e avaliações de
+                vulnerabilidade detectam e retificam possíveis pontos fracos.
+                <br />
+                Estas precauções impedem que os cibercriminosos acedam aos dados
+                confidenciais dos jogadores, sublinhando a dedicação do casino
+                escolhido em promover um ambiente seguro para os seus clientes.
+              </p>
+            </li>
+            <li class="flex flex-col gap-6 sm:gap-8">
+              <h3 class="text-[18px] sm:text-[22px]">
+                Suporte ao cliente e respostas imediatas
+              </h3>
+              <p>
+                Existe uma forte correlação entre o sucesso de um casino online
+                e o calibre do seu serviço ao cliente. Quando os jogadores
+                recebem suporte especializado, sua satisfação e confiança
+                aumentam, aumentando sua afinidade com um operador específico.
+                Os canais de comunicação essenciais devem incluir chat ao vivo,
+                e-mail e suporte por telefone. Além disso, o site deve garantir
+                respostas rápidas, independentemente do modo de comunicação
+                selecionado.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="max-w-[1332px] mx-auto px-3 sm:px-[26px] text-[#858585]">
+      <div
+        class="border-t border-[#858585] py-[52px] sm:pt-[86px] sm:pb-[72px] text-xs sm:text-sm lg:text-base"
+      >
+        <p>
+          Somos um terceiro totalmente independente que fornece notícias,
+          análises, dicas e sugestões relacionadas a cassinos, e todas as nossas
+          opiniões nos representam, e de alguma forma marcas ou marcas não
+          aparecem neste site. Todas as nossas informações podem ser provadas
+          verdadeiras. Todos os casinos exibirão os seus próprios termos nos
+          seus próprios sites e estes devem ser sempre verificados antes de
+          serem jogados. Todos os termos de uso deste artigo são exibidos no
+          final desta página e também nas páginas das operadoras. Para combinar
+          as listagens e análises de cassinos neste site, coletamos informações
+          de diversas fontes, incluindo experiências e comentários dos usuários.
+          Em alguns casos, levamos em consideração nossos próprios algoritmos de
+          listagem e classificação, além de algumas listas de terceiros. Para
+          que possamos manter esta informação gratuita, podemos entretanto
+          receber receitas dos actuais prestadores de serviços. Apesar de
+          fazermos tudo o que estiver ao nosso alcance para garantir que todas
+          as informações que fornecemos estão atualizadas e precisas, não
+          assumimos qualquer responsabilidade pelas garantias ou autorizações em
+          questão. Isto aplica-se a tudo, desde a transferibilidade do
+          conhecimento até à sua aplicabilidade e importância. Este site,
+          incluindo seu conteúdo e serviços, é fornecido como “é”. Assim, o uso
+          ou confiança nas informações fornecidas é de sua inteira
+          responsabilidade<br /><br />Todos os sites são licenciados e aprovados
+          pelo Serviço de Regulação e Inspeção de Jogos (SRIJ):<br /><br />
+          BEM OPERATIONS LIMITED - Brand:
+          <a
+            href="https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licenca_004_Betclic.pdf"
+            target="_blank"
+            class="border-b border-[#858585]"
+            >Betclic - Licenças: Licença n.º 001, Licença n.º 004</a
+          >
+          <br />
+          GOBET-ENTRETENIMENTO, S.A. - Brand:
+          <a
+            href="https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licenca_006_bwin.pdf"
+            target="_blank"
+            class="border-b border-[#858585]"
+            >Bwin - Licenças: Licença n.º 002, Licença n.º 006</a
+          >
+          <br />ESTORIL SOL DIGITAL, ONLINE GAMING PRODUCTS AND SERVICES, S.A. -
+          Brand:
+          <a
+            href="https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licenca_006_bwin.pdf"
+            target="_blank"
+            class="border-b border-[#858585]"
+            >ESCOnline - Licenças: Licença n.º 003, Licença n.º 008</a
+          >
+        </p>
+        <div
+          class="flex items-center flex-wrap gap-20 mt-[85px] mb-[105px] sm:mt-[90px] sm:mb-[70px] lg:my-16"
+        >
+          <img
+            src="./images/LabelFooter1.svg"
+            alt="Label"
+            class="max-md:w-14 max-md:h-14"
+          />
+          <img
+            src="./images/LabelFooter2.svg"
+            alt="Label"
+            class="max-md:w-28"
+          />
+          <img
+            src="./images/LabelFooter3.svg"
+            alt="Label"
+            class="max-md:w-28"
+          />
+          <img
+            src="./images/LabelFooter4.svg"
+            alt="Label"
+            class="max-md:w-[107px]"
+          />
+          <img
+            src="./images/LabelFooter5.svg"
+            alt="Label"
+            class="max-md:w-[95px]"
+          />
+        </div>
+        <p>Copyright © 2024 IDLESLOTS | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
